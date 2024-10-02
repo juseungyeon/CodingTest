@@ -3,5 +3,5 @@ function solution(s){
     const pCount = [...lowerCaseString].filter(e => e === 'p').length;
     const yCount = [...lowerCaseString].filter(e => e === 'y').length;
 
-    return pCount === yCount ? true : false;
+    return pCount === yCount;
 }
