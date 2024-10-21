@@ -12,9 +12,5 @@ function solution(s) {
         "nine": 9,
     }
     
-    for (const property in strNum) {
-        s = s.replaceAll(property, strNum[property])
-    }
-    
-    return Number(s);
+    return Number(s.replace(/zero|one|two|three|four|five|six|seven|eight|nine/g, match => strNum[match]));
 }
